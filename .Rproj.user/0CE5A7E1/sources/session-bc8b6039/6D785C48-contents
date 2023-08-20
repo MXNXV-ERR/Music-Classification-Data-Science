@@ -43,7 +43,7 @@ library(ggplot2)
 fft <- 2048
 hl <- 512
 
-stft <- specgram(audio,)
+stft <- specgram(audio)
 
 print(dim(stft)) # Equivalent to np.shape in Python
 # [1] 1025 1293
