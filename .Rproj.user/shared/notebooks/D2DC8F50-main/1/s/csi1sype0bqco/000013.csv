@@ -1,5 +1,0 @@
-"0","stft <- specgram(audio, fft = fft, hop = hl)
-"
-"2","Error in specgram(audio, fft = fft, hop = hl) : 
-  unused arguments (fft = fft, hop = hl)
-"

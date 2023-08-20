@@ -1,11 +1,9 @@
 ---
 title: "Audio Analysing for Data Science"
-author: MXNXV-ERR
 output: html_notebook
 ---
-```
-# WTF
-```
+
+
 ```{r}
 library(tuneR)
 
