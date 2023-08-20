@@ -1,0 +1,60 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+library(tuneR)
+
+# Define the path to the audio file
+dir_ <- "../Data"
+file_name <- "blues.00023.wav"
+file_path <- file.path(dir_, "genres_original", "blues", file_name)
+audio <- readWave(file_path)
+```
+
+
+```{r}
+# Extract audio data and sample rate
+y <- audio@left
+s <- audio@samp.rate
+
+# Print information
+#cat("y:", y, "\n\n")
+cat("y length:", length(y), "\n\n")
+cat("Sample Rate (Hz):", s, "\n\n")
+
+# Check length of audio
+cat("Check Len of Audio:", length(y) / s, "\n")
+```
+
+
+```{r}
+
+
+plot(audio,col="cyan")
+
+```
+```{r}
+library(signal)
+library(ggplot2)
+
+fft <- 2048
+hl <- 512
+
+stft <- specgram(audio,)
+
+print(dim(stft)) # Equivalent to np.shape in Python
+# [1] 1025 1293
+
+# Plotting
+df <- data.frame(x = rep(1:nrow(stft), ncol(stft)),
+                 y = rep(1:ncol(stft), each = nrow(stft)),
+                 z = as.vector(stft))
+
+ggplot(df, aes(x = x, y = y, color = z)) +
+  geom_point() +
+  scale_color_gradient(low = "black", high = "white") +
+  theme_minimal() +
+  labs(x = "Frequency Bin", y = "Time Frame")
+```
