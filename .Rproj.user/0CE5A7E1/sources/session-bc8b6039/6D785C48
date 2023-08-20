@@ -3,9 +3,9 @@
     "path": "C:/Users/MXNXV-ERR/Desktop/MXNXV/Sem7/DataScience/DSProj/main.Rmd",
     "project_path": "main.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "3757040697",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1692522034449.0,
     "source_on_save": false,
     "relative_order": 1,
@@ -14,15 +14,16 @@
         "chunk_output_type": "inline",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "45,22",
-        "scrollLine": "38"
+        "cursorPosition": "15,67",
+        "scrollLine": "0",
+        "last_setup_crc32": "bc8b60392afd5dc8"
     },
     "folds": "",
-    "lastKnownWriteTime": 1692554816,
+    "lastKnownWriteTime": 1692555451,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1692554964442,
+    "last_content_update": 1692555451262,
     "read_only": false,
     "read_only_alternatives": []
 }

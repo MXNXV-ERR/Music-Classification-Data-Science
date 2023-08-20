@@ -4,7 +4,10 @@ output: html_notebook
 ---
 
 
-```{r}
+## IT is easy only , Idk why ppl make it seem difficult
+
+
+```{r Loading 1 Audio file}
 library(tuneR)
 
 # Define the path to the audio file

@@ -1,9 +1,0 @@
-"0","library(signal)"
-"0","library(ggplot2)"
-"0",""
-"0","fft <- 2048"
-"0","hl <- 512"
-"0",""
-"0","stft <- specgram(audio)"
-"2","Error in specgram(audio) : 'x' has to be a numeric.
-"

@@ -4,7 +4,10 @@ output: html_notebook
 ---
 
 
-```{r}
+## IT is easy only , Idk why ppl make it seem difficult
+
+
+```{r Loading 1 Audio file}
 library(tuneR)
 
 # Define the path to the audio file
@@ -43,7 +46,7 @@ library(ggplot2)
 fft <- 2048
 hl <- 512
 
-stft <- specgram(audio,)
+stft <- specgram(audio)
 
 print(dim(stft)) # Equivalent to np.shape in Python
 # [1] 1025 1293
